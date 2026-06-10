@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Order Confirmed | Veloura Fashion</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:20px;
+
+background:
+linear-gradient(
+135deg,
+#f8f6f3,
+#ffffff,
+#fdf7ec
+);
+
+}
+
+.success-box{
+
+background:rgba(255,255,255,.96);
+
+padding:55px;
+
+max-width:700px;
+
+width:100%;
+
+border-radius:35px;
+
+text-align:center;
+
+box-shadow:
+0 30px 80px rgba(0,0,0,.10);
+
+border:1px solid rgba(212,175,55,.25);
+
+position:relative;
+
+overflow:hidden;
+
+transition:.4s;
+
+}
+
+.success-box::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:-100%;
+
+width:50%;
+height:100%;
+
+background:
+linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.6),
+transparent
+);
+
+transition:1.2s;
+
+}
+
+.success-box:hover::before{
+
+left:150%;
+
+}
+
+.success-box:hover{
+
+transform:translateY(-8px);
+
+}
+
+.check{
+
+width:130px;
+height:130px;
+
+margin:auto;
+margin-bottom:30px;
+
+border-radius:50%;
+
+background:
+linear-gradient(
+135deg,
+#16A34A,
+#22C55E
+);
+
+color:white;
+
+font-size:70px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+box-shadow:
+0 15px 35px rgba(34,197,94,.35);
+
+animation:successPop 1s ease;
+
+}
+
+.success-box h1{
+
+font-size:48px;
+
+margin-bottom:20px;
+
+color:#6B102B;
+
+letter-spacing:1px;
+
+}
+
+.success-box p{
+
+font-size:18px;
+
+line-height:1.9;
+
+color:#555;
+
+}
+
+.contact-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+margin-top:30px;
+
+}
+
+.whatsapp-btn,
+.facebook-btn{
+
+text-decoration:none;
+
+padding:14px 26px;
+
+border-radius:14px;
+
+font-weight:600;
+
+color:white;
+
+transition:.35s;
+
+}
+
+.whatsapp-btn{
+
+background:#25D366;
+
+}
+
+.whatsapp-btn:hover{
+
+transform:translateY(-4px);
+
+box-shadow:
+0 12px 25px rgba(37,211,102,.35);
+
+}
+
+.facebook-btn{
+
+background:#1877F2;
+
+}
+
+.facebook-btn:hover{
+
+transform:translateY(-4px);
+
+box-shadow:
+0 12px 25px rgba(24,119,242,.35);
+
+}
+
+.home-btn{
+
+display:inline-block;
+
+margin-top:30px;
+
+padding:16px 40px;
+
+border-radius:14px;
+
+text-decoration:none;
+
+font-weight:700;
+
+background:
+linear-gradient(
+135deg,
+#6B102B,
+#A61E4D
+);
+
+color:white;
+
+transition:.35s;
+
+}
+
+.home-btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:
+0 15px 35px rgba(107,16,43,.30);
+
+}
+
+@keyframes successPop{
+
+0%{
+transform:scale(0);
+opacity:0;
+}
+
+70%{
+transform:scale(1.15);
+}
+
+100%{
+transform:scale(1);
+opacity:1;
+}
+
+}
+
+@media(max-width:768px){
+
+.success-box{
+
+padding:35px 25px;
+
+}
+
+.success-box h1{
+
+font-size:34px;
+
+}
+
+.check{
+
+width:95px;
+height:95px;
+
+font-size:50px;
+
+}
+
+.contact-buttons{
+
+flex-direction:column;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="success-box">
+
+<div class="check">✓</div>
+
+<h1>Order Confirmed!</h1>
+
+<p>
+Thank you for shopping with
+<strong>Veloura Fashion</strong>
+</p>
+
+<p>
+Your order has been received successfully.
+</p>
+
+<p>
+Our team will contact you shortly.
+</p>
+
+<div class="contact-buttons">
+
+<a href="https://wa.me/8801343160760"
+class="whatsapp-btn">
+
+WhatsApp Us
+
+</a>
+
+<a href="https://www.facebook.com/share/1EAZRVkctP/"
+class="facebook-btn">
+
+Facebook Page
+
+</a>
+
+</div>
+
+<a href="style.html"
+class="home-btn">
+
+Continue Shopping
+
+</a>
+
+</div>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){
+dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+
+gtag('config', 'G-XXXXXXXXXX');
+</script>
+</body>
+
+</html>

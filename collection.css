@@ -1,0 +1,131 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Poppins,sans-serif;
+    background:#faf7f2;
+}
+
+.collection-section{
+    padding:120px 8% 80px;
+}
+
+.collection-section h1{
+    text-align:center;
+    font-size:50px;
+    color:#6B102B;
+    margin-bottom:50px;
+    letter-spacing:2px;
+}
+
+.collection-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+/* CARD */
+
+.collection-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:25px;
+    text-decoration:none;
+    cursor:pointer;
+    background:#fff;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s ease;
+}
+
+/* IMAGE */
+
+.collection-card img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    transition:.6s ease;
+}
+
+/* OVERLAY */
+
+.overlay{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding:35px;
+    background:linear-gradient(
+        transparent,
+        rgba(0,0,0,.85)
+    );
+}
+
+.overlay h2{
+    color:white;
+    font-size:28px;
+    margin:0;
+}
+.overlay p{
+    color:#92134e;
+    margin-top:10px;
+    font-size:14px;
+    letter-spacing:1px;
+}
+
+/* HOVER EFFECT */
+
+.collection-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.18);
+
+}
+
+.collection-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.collection-card:hover .overlay h2{
+
+    color:#830b3d;
+
+}
+
+/* CLICK EFFECT */
+
+.collection-card:active{
+
+    transform:scale(.97);
+
+}
+
+/* GOLD BORDER EFFECT */
+
+.collection-card::before{
+
+    content:'';
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    border:2px solid transparent;
+
+    transition:.4s ease;
+
+    z-index:2;
+
+}
+
+.collection-card:hover::before{
+
+    border-color:#880441;
+
+}

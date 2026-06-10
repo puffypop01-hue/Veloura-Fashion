@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Order Now | Veloura Fashion</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f8f8f8;
+    margin:0;
+    padding:0;
+}
+
+.order-page{
+    max-width:1000px;
+    margin:120px auto;
+    padding:30px;
+}
+
+.order-card{
+    display:flex;
+    gap:40px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    flex-wrap:wrap;
+}
+
+.order-card img{
+    width:400px;
+    max-width:100%;
+    border-radius:15px;
+}
+
+.order-info{
+    flex:1;
+}
+
+.order-info h1{
+    margin-top:0;
+}
+
+.price{
+    color:#6B102B;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.review{
+    color:#f4b400;
+    font-size:18px;
+}
+
+.policy{
+    background:#fafafa;
+    padding:15px;
+    border-radius:10px;
+    margin:20px 0;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:1px solid #ddd;
+    border-radius:8px;
+    box-sizing:border-box;
+}
+
+.confirm-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#D4AF37;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.confirm-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(212,175,55,.3);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="order-page">
+
+    <div class="order-card">
+
+    
+<h2 id="productName"></h2>
+
+<p id="productPrice"></p>
+
+</div>
+<div class="image-container">
+
+    
+        <div class="order-info">
+
+            <h2 id="productName"></h2>
+
+            <p id="productPrice"></p>
+            <div class="trust-box">
+
+    🚚 Fast Delivery <br>
+
+    💯 Premium Quality <br>
+
+    ✅ Cash On Delivery Available
+
+</div>
+
+            <p class="review">
+                ⭐⭐⭐⭐⭐ (24 Reviews)
+            </p>
+
+            <p>
+                Elegant embroidery with premium quality fabric.
+                Perfect for casual, festive and party wear.
+            </p>
+
+            <div class="policy">
+                <div class="reviews-box">
+
+    <h3>⭐ Customer Reviews</h3>
+
+    <p>⭐⭐⭐⭐⭐ Amazing quality!</p>
+
+    <p>⭐⭐⭐⭐⭐ Exactly same as picture.</p>
+
+    <p>⭐⭐⭐⭐⭐ Fast delivery & premium packaging.</p>
+
+</div>
+
+                <h3>🚚 Delivery Policy</h3>
+
+                <p>
+                    Dhaka: 1-2 Days <br>
+                    Outside Dhaka: 2-5 Days <br>
+                    Cash On Delivery Available
+                </p>
+
+                <h3>🔄 Exchange Policy</h3>
+
+                <p>
+                    Exchange available within 3 days after delivery.
+                </p>
+
+            </div>
+
+            <h3>Customer Information</h3>
+
+            <input type="text" id="name" placeholder="Full Name">
+
+<input type="text" id="phone" placeholder="Phone Number">
+
+<textarea id="address" placeholder="Address"></textarea>
+           <button class="confirm-btn" onclick="confirmOrder()">
+    Confirm Order
+</button>
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+document.getElementById("productName").innerText =
+params.get("name");
+
+document.getElementById("productPrice").innerText =
+"৳ " + params.get("price");
+
+document.getElementById("productImage").src =
+params.get("img1");
+
+document.getElementById("img1").src =
+params.get("img1");
+
+document.getElementById("img2").src =
+params.get("img2");
+
+document.getElementById("img3").src =
+params.get("img3");
+
+</script>
+<script>
+const image = document.getElementById("productImage");
+
+image.addEventListener("mousemove",(e)=>{
+
+const rect = image.getBoundingClientRect();
+
+const x=((e.clientX-rect.left)/rect.width)*100;
+const y=((e.clientY-rect.top)/rect.height)*100;
+
+image.style.transformOrigin=`${x}% ${y}%`;
+image.style.transform="scale(2)";
+
+});
+
+image.addEventListener("mouseleave",()=>{
+
+image.style.transformOrigin="center";
+image.style.transform="scale(1)";
+
+});
+</script>
+<script>
+
+function confirmOrder(){
+
+    let name =
+    document.getElementById("name").value.trim();
+
+    let phone =
+    document.getElementById("phone").value.trim();
+
+    let address =
+    document.getElementById("address").value.trim();
+
+    if(name === "" || phone === "" || address === ""){
+
+        alert("Please fill in all required fields!");
+
+        return;
+
+    }
+
+    window.location.href = "success.html";
+
+}
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){
+dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+
+gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+</body>
+</html>

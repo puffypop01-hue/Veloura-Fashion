@@ -1,0 +1,257 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    background:#0F2E20;
+    color:white;
+}
+
+/* Hero */
+
+.hero{
+
+    background:
+    linear-gradient(
+    135deg,
+    #0F2E20,
+    #14532D
+    );
+
+    text-align:center;
+
+    padding:100px 20px;
+
+}
+
+.moon{
+
+    font-size:55px;
+
+    margin-bottom:15px;
+
+}
+
+.hero h1{
+
+    font-size:60px;
+
+    color:#D4AF37;
+
+    letter-spacing:4px;
+
+}
+
+.hero p{
+
+    margin-top:15px;
+
+    color:#F5F5F5;
+
+    font-size:18px;
+
+}
+
+/* Banner */
+
+.eid-banner{
+
+    text-align:center;
+
+    background:#D4AF37;
+
+    color:#0F2E20;
+
+    font-weight:600;
+
+    padding:15px;
+
+}
+
+/* Product Grid */
+
+.products-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:35px;
+
+    padding:50px;
+
+}
+
+/* Islamic Arch Card */
+
+.product-card{
+
+    background:white;
+
+    color:black;
+
+    overflow:hidden;
+
+    border-radius:
+    120px 120px 20px 20px;
+
+    position:relative;
+
+    transition:.4s;
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 15px 35px rgba(212,175,55,.25);
+
+}
+
+/* Badge */
+
+.badge{
+
+    position:absolute;
+
+    top:15px;
+
+    left:15px;
+
+    background:#14532D;
+
+    color:white;
+
+    padding:8px 14px;
+
+    border-radius:30px;
+
+    font-size:12px;
+
+    z-index:10;
+
+}
+
+/* Image */
+
+.product-card img{
+
+    width:100%;
+
+    height:420px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.product-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* Product Info */
+
+.product-info{
+
+    padding:20px;
+
+    text-align:center;
+
+}
+
+.product-info h3{
+
+    margin-bottom:10px;
+
+    font-size:22px;
+
+}
+
+.price{
+
+    color:#14532D;
+
+    font-size:26px;
+
+    font-weight:bold;
+
+    margin-bottom:15px;
+
+}
+
+/* Button */
+
+.buy-btn{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:
+    linear-gradient(
+    135deg,
+    #14532D,
+    #1B6B42
+    );
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.buy-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 10px 20px rgba(20,83,45,.25);
+
+}
+
+.buy-btn:active{
+
+    transform:scale(.97);
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .hero h1{
+
+        font-size:38px;
+
+    }
+
+    .products-grid{
+
+        padding:20px;
+
+    }
+
+    .product-card img{
+
+        height:320px;
+
+    }
+
+}

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cotton Collection | Veloura Fashion</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#F8FAF7;
+}
+
+/* Header */
+
+.collection-header{
+text-align:center;
+padding:80px 20px;
+background:linear-gradient(
+135deg,
+#EDF5EE,
+#F8FAF7
+);
+}
+
+.collection-header h1{
+font-size:52px;
+color:#b21f77;
+}
+
+.collection-header p{
+margin-top:10px;
+color:#806b6c;
+letter-spacing:2px;
+}
+
+/* Product Grid */
+
+.products-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:35px;
+
+padding:50px;
+
+}
+
+/* Product Card */
+
+.product-card{
+
+position:relative;
+
+background:white;
+
+border-radius:24px;
+
+overflow:hidden;
+
+transition:.5s;
+
+box-shadow:
+0 8px 30px rgba(0,0,0,.05);
+
+}
+
+.product-card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:
+0 25px 45px rgba(81, 59, 70, 0.18);
+
+}
+
+/* Shine Effect */
+
+.product-card::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-100%;
+
+width:100%;
+
+height:100%;
+
+background:
+linear-gradient(
+90deg,
+transparent,
+rgba(255, 255, 255, 0.35),
+transparent
+);
+
+transition:.8s;
+
+z-index:2;
+
+}
+
+.product-card:hover::before{
+
+left:100%;
+
+}
+
+/* Badge */
+
+.product-badge{
+
+position:absolute;
+
+top:15px;
+
+left:15px;
+
+background:#513b46;
+
+color:white;
+
+padding:8px 14px;
+
+border-radius:30px;
+
+font-size:12px;
+
+z-index:10;
+
+}
+
+/* Image */
+
+.product-card img{
+
+width:100%;
+
+height:400px;
+
+object-fit:cover;
+
+transition:.6s;
+
+}
+
+.product-card:hover img{
+
+transform:scale(1.05);
+
+filter:brightness(1.08);
+
+}
+
+/* Product Info */
+
+.product-info{
+
+padding:20px;
+
+text-align:center;
+
+}
+
+.product-info h3{
+
+font-size:20px;
+
+margin-bottom:10px;
+
+color:#333333;
+
+}
+
+.price{
+
+font-size:24px;
+
+font-weight:700;
+
+color:#513b4d;
+
+margin-bottom:15px;
+
+}
+
+/* Button */
+
+.buy-btn{
+
+width:100%;
+
+padding:15px;
+
+border:none;
+
+border-radius:14px;
+
+background:
+linear-gradient(
+135deg,
+#513b4a,
+#963a6e
+);
+
+color:white;
+
+font-size:16px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+.buy-btn:hover{
+
+letter-spacing:1px;
+
+transform:translateY(-4px);
+
+box-shadow:
+0 15px 25px rgba(155, 2, 106, 0.25);
+
+}
+
+.buy-btn:active{
+
+transform:scale(.96);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="collection-header">
+
+<h1>Cotton Collection</h1>
+
+<p>Soft • Elegant • Comfortable</p>
+
+</section>
+
+<div class="products-grid">
+
+<!-- Product 1 -->
+
+<div class="product-card">
+
+<img src="cotton collection/LSM RAW0532.JPG" alt="Cotton Dress">
+
+<div class="product-info">
+
+<h3>Premium Cotton 3 Piece</h3>
+
+<p class="price">৳1290</p>
+
+<button class="buy-btn"
+onclick="window.location.href='order.html?name=Premium Cotton 3 Piece&price=1290/-&img1=cotton collection/LSM RAW0532.JPG'">
+
+Buy Now
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Product 2 -->
+
+<div class="product-card">
+
+<img src="cotton collection/LSM RAW0777 copy.JPG" alt="Cotton Dress">
+
+<div class="product-info">
+
+<h3>Elegant Cotton Collection</h3>
+
+<p class="price">৳1290</p>
+
+<button class="buy-btn"
+onclick="window.location.href='order.html?name=Elegant Cotton Collection&price=1290&img1=cotton collection/LSM RAW0777.JPG'">
+
+Buy Now
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Product 3 -->
+
+<div class="product-card">
+
+<img src="cotton collection/LSM RAW0843.JPG" alt="Cotton Dress">
+
+<div class="product-info">
+
+<h3>Luxury Soft Cotton Set</h3>
+
+<p class="price">৳1290</p>
+
+<button class="buy-btn"
+onclick="window.location.href='order.html?name=Luxury Soft Cotton Set&price=1290&img1=cotton collection/LSM RAW0843.JPG'">
+
+Buy Now
+
+</button>
+
+</div>
+
+
+
+</div>
+<div class="product-card">
+
+<img src="cotton collection/LSM RAW0886.JPG" alt="Cotton Dress">
+
+<div class="product-info">
+
+<h3>Soft Cotton Set</h3>
+
+<p class="price">৳1290</p>
+
+<button class="buy-btn"
+onclick="window.location.href='order.html?name=Soft Cotton Set&price=1290&img1=cotton collection/LSM RAW0886.JPG'">
+
+Buy Now
+
+</button>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){
+dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+
+gtag('config', 'G-XXXXXXXXXX');
+</script>
+</body>
+
+</html>

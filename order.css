@@ -1,0 +1,143 @@
+.brand-header{
+
+    text-align:center;
+
+    padding:40px 20px 10px;
+
+}
+
+.brand-header h1{
+
+    color:#6B102B;
+
+    font-size:45px;
+
+    margin-bottom:10px;
+
+}
+.body{background:
+linear-gradient(
+135deg,
+#F8F6F3,
+#FFFFFF
+);}
+
+.brand-header p{
+
+    color:#777;
+
+    font-size:18px;
+
+}.order-card{
+
+    background:white;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+
+    overflow:hidden;
+    box-shadow:
+0 25px 60px rgba(0,0,0,.08);
+
+border-radius:25px;
+
+overflow:hidden;
+
+}.order-card img{
+
+    transition:.4s;
+
+}
+
+.order-card img:hover{
+
+    transform:scale(1.03);
+
+}.reviews-box{
+
+    background:#fafafa;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    margin-top:20px;
+
+}.confirm-btn{
+
+    background:
+linear-gradient(
+135deg,
+#6B102B,
+#A61E4D
+);
+
+color:white;
+
+font-weight:700;
+
+border:none;
+
+border-radius:12px;
+
+transition:.3s;
+}
+.confirm-btn:hover{
+
+   transform:translateY(-3px);
+
+box-shadow:
+0 12px 25px rgba(107,16,43,.25);
+
+
+}
+
+
+.order-banner{
+
+    text-align:center;
+
+    padding:35px;
+
+    background:
+    linear-gradient(
+    135deg,
+    #6B102B,
+    #A61E4D
+    );
+
+    color:white;
+
+}
+
+.order-banner h1{
+
+    font-size:42px;
+
+    letter-spacing:4px;
+
+}
+
+.order-banner p{
+
+    margin-top:10px;
+
+    opacity:.9;
+
+}.trust-box{
+
+    background:#FFF7E6;
+
+    border-left:5px solid #D4AF37;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    margin:20px 0;
+
+    line-height:2;
+
+}
